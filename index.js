@@ -5,8 +5,8 @@ const readFile = util.promisify(fs.readFile);
 
 const IF_DEFS = [];
 
-const ENDIF = "//#endif";
-const IFDEF = "//#ifdef";
+const IFDEF = "// #ifdef";
+const ENDIF = "// #endif";
 let filterList;
 let baseDir;
 
